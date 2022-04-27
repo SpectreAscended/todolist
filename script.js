@@ -11,10 +11,9 @@ const list = document.querySelector('.list--list')
 const init = function() {
     const postList = function() {
         if(!input.value) return;
-        console.log(input.value);
-        const html = `<li class="list-item">${input.value}</li>`
+        const html = `<li class="list-item">${input.value}</li>`;
         
-        list.insertAdjacentHTML('beforeend', html)
+        list.insertAdjacentHTML('beforeend', html);
         input.value = '';
     };
     
