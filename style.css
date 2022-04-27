@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 140rem;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo__box {
+    padding: 10rem 30rem;
+    border: solid #000 2px;
+    max-width: 100rem;
+    margin: 10rem auto 10rem;
+    /* margin-top: 10rem; */
+    border-radius: 20px;
+    background-color: rgb(23, 89, 165);
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px #000;
+}
+
+.heading-primary {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.heading-secondary {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.todo__list {
+    display: block;    
+}
+
+.form button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: background-color 250ms ease-out;
+}
+
+.form-button-post{
+    background-color: #000;
+    color: #fff;
+    margin-right: 2rem;
+}
+
+.form-button-post:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.form-button-delete:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+.todo-input {
+    /* max-width: rem; */
+    border: none;
+    border-radius: 8px;
+    font-size: 2rem;;
+    resize: none;
+}
+
+.list--list {
+    padding: 2rem 20rem;
+    border: solid #000 2px;
+    list-style: square;
+
+}
+
+.list-item {
+    font-size: 1.8rem;
+}

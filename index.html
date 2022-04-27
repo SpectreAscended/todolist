@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="todo__box">
+                <h1 class="heading-primary">What to do today?</h1>
+                <form class="form" action="post">
+                    <label for="todo-input"></label>
+                    <!-- <input class="todo-input" type="text" name="todo-input"> -->
+                    <textarea class="todo-input" name="todo-input" id="input" cols="40" rows="5"></textarea>
+                    <button class="form-button-post" type="submit">Post</button>
+                    <button class="form-button-delete" type="submit">Clear list</button>
+                </form>
+            </div>
+            <div class="todo__list">
+                <h2 class="heading-secondary">To do list</h2>
+                <ul class="list--list">
+                    <!-- <li class="list-item">This is an item on the list</li> -->
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
