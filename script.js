@@ -5,14 +5,10 @@ const postButton = document.querySelector('.form-button-post')
 const delButton = document.querySelector('.form-button-delete')
 const list = document.querySelector('.list--list')
 
-
-
-
-const init = function() {
+const app = function() {
     const postList = function() {
         if(!input.value) return;
         const html = `<li class="list-item">${input.value}</li>`;
-        
         list.insertAdjacentHTML('beforeend', html);
         input.value = '';
     };
@@ -34,4 +30,4 @@ const init = function() {
     });
 };
 
-init();
+app();
