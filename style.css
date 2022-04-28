@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    font-family: sans-serif;
 }
 
 .container {
@@ -54,13 +55,13 @@ html {
 }
 
 .form-button-post{
-    background-color: #000;
+    background-color: #333;
     color: #fff;
     margin-right: 2rem;
 }
 
 .form-button-post:hover {
-    background-color: rgb(41, 41, 41);
+    background-color: #444;
 }
 
 .form-button-delete:hover {
@@ -84,4 +85,77 @@ html {
 
 .list-item {
     font-size: 1.8rem;
+    display: block;
+}
+
+.del-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    margin-left: 1rem;;
+    padding: .5rem .75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 250ms ease;
+}
+
+.del-btn:hover {
+    background-color: #444;
+}
+
+@media (max-width: 1100px) {
+    .todo__box {
+        padding: 7.5rem 20rem;
+        max-width: 75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .todo__box {
+        padding: 5rem 15rem;
+        max-width: 50rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 2rem;
+    }
+    .todo-input {
+        max-width: 30rem;
+        font-size: 1.6rem;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .heading-primary{
+        font-size: 2.5rem;
+        width: 20rem;
+    }
+
+    .todo__box {
+        padding: 3rem 10rem;
+        max-width: 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 2rem;
+    }
+    .todo-input {
+        max-width: 25rem;
+        font-size: 1.6rem;
+
+    }
+
+    .list--list {
+        padding: 2rem 5rem;
+
+    }
+    
+    .list-item {
+        font-size: 1.6rem;
+        display: block;
+    }
 }
