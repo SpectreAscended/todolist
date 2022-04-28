@@ -1,22 +1,19 @@
 "use strict";
 
-
-
 const app = function() {
     const input = document.querySelector('.todo-input');
     const postButton = document.querySelector('.form-button-post');
     const clearButton = document.querySelector('.form-button-delete');
     const delItem = document.querySelectorAll('.del-btn')
     const list = document.querySelector('.list--list');
-    const item = document.querySelectorAll('.list-item')
-    const listContainer = document.querySelector('.todo__list')
+    const item = document.querySelectorAll('.list-item');
+    const listContainer = document.querySelector('.todo__list');
 
     const postList = function() {
         if(!input.value) return;
         const html = `<li class="list-item">${input.value}<button class="del-btn">X</button></li>`;
         list.insertAdjacentHTML('beforeend', html);
         input.value = '';
-        
     };
     
     postButton.addEventListener('click', function(e) {
